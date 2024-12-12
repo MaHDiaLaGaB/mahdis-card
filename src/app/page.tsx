@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, LetterFx, Arrow, SmartImage, Tag } from '@/once-ui/components';
+import { Heading, Text, Flex, Button, InlineCode, LetterFx, Arrow, SmartImage, Tag, GlitchFx } from '@/once-ui/components';
 import Link from 'next/link';
 
 export default function Home() {
@@ -65,25 +65,27 @@ export default function Home() {
 							<LetterFx trigger='instant'>
 								Founder & Backend Cyborg: Merging Code and AI Creativity at HyperVizion
 							</LetterFx>
-
-							<Flex direction="row" gap="8">
-								<Tag variant="accent" size="m" label="Backend+" />
-								<Tag variant="danger" size="m" label="DevOps" />
-								<Tag variant="gradient" size="m" label="AI" />
-								<Tag variant="success" size="m" label="GIS" />
-							</Flex>
-							<Flex direction="column" gap="8" marginTop="16">
-								<Heading variant="body-strong-m">Stuff I Like</Heading>
+							<GlitchFx>
 								<Flex direction="row" gap="8">
-									<Tag variant="info" size="m" label="MMA" />
-									<Tag variant="brand" size="m" label="BlockChain" />
-									<Tag variant="accent" size="m" label="Web3" />
-									<Tag variant="warning" size="m" label="F1" />
+									<Tag variant="accent" size="m" label="Backend+" />
+									<Tag variant="danger" size="m" label="DevOps" />
+									<Tag variant="gradient" size="m" label="AI" />
+									<Tag variant="success" size="m" label="GIS" />
 								</Flex>
-							</Flex>
+								<Flex direction="column" gap="8" marginTop="16">
+									<Heading variant="body-strong-m">Stuff I Like</Heading>
+									<Flex direction="row" gap="8">
+										<Tag variant="info" size="m" label="MMA" />
+										<Tag variant="brand" size="m" label="BlockChain" />
+										<Tag variant="accent" size="m" label="Web3" />
+										<Tag variant="warning" size="m" label="F1" />
+									</Flex>
+								</Flex>
+							</GlitchFx>
+
 							<Button
 								id="readDocs"
-								href=""
+								onClick={() => window.open("https://www.hypervizion.ly/", '_blank', 'noopener,noreferrer')}
 								variant="secondary">
 								<Flex alignItems="center">
 									To HyperVizion
