@@ -28,6 +28,7 @@ export default function Home() {
 						justifyContent="center"
 						radius="l"
 						onBackground="brand-strong"
+						mobileDirection='column'
 					>
 						<Flex
 							position="relative"
